@@ -119,7 +119,7 @@ const obrasPpales = [
     {
         id: 5,
         titulo: "EFECTO DERRAME", 
-        img: "../images/programacion/Flyer-derrame-cuadrado-g.webp", 
+        img: "./images/programacion/Flyer-derrame-cuadrado-g.webp", 
         alt: "ciclo escenas comicas Efecto derrame",
         link: "https://alternativateatral.com/obra84916-efecto-derrame-agosto"
     },
@@ -127,7 +127,7 @@ const obrasPpales = [
     {
         id: 6,
         titulo: "MALFLASH", 
-        img: "../images/programacion/malflash-mayo.webp", 
+        img: "./images/programacion/malflash-mayo.webp", 
         alt: "ciclo Malflash",
         link: "https://panel.alternativateatral.com/obra83722-malflash-edicion-mayo"
 
