@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+.nav-animal {
+  background-color: rgba(205, 227, 158, 0.1);
+  position: sticky;
+  z-index: 1;
+}
+.nav-animal li a {
+  color: rgb(40, 64, 3);
+  font-size: 1.8rem;
+  /*Subrayado animado*/
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.nav-animal li a:hover {
+  color: rgb(40, 64, 3);
+  /*Subrayado animado*/
+  background-size: 100% 2px;
+}
+.nav-animal button {
+  background-color: rgba(205, 227, 158, 0.1);
+  border: none;
+}
+.nav-animal button span {
+  font-size: 2.6rem;
+}
+.nav-animal img {
+  width: 170px;
+}
+
+.contenedor, .contenedor-contacto {
+  background-color: rgba(205, 227, 158, 0.1);
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.contenedor-contacto {
+  background-color: rgba(119, 166, 18, 0.1);
+}
+
+.button-animation, .button-animation-enviar {
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(119, 166, 18);
+  font-size: 1.3rem;
+  padding: 3px;
+}
+.button-animation a, .button-animation-enviar a {
+  text-decoration: none;
+  color: rgb(40, 64, 3);
+}
+.button-animation:hover, .button-animation-enviar:hover {
+  background-color: rgb(40, 64, 3);
+  transition: 1s;
+}
+.button-animation:hover a, .button-animation-enviar:hover a {
+  color: rgb(119, 166, 18);
+}
+
+.button-animation-enviar {
+  background-color: rgb(40, 64, 3);
+}
+.button-animation-enviar a {
+  text-decoration: none;
+  color: rgb(119, 166, 18);
+}
+.button-animation-enviar:hover {
+  background-color: rgb(119, 166, 18);
+  transition: 1s;
+}
+.button-animation-enviar:hover a {
+  color: rgb(40, 64, 3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgba(205, 227, 158, 0.1);
+  background-attachment: fixed;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  color: rgb(13, 13, 13);
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 5rem;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 4.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h1, h2, h3 {
+  font-family: "Teko", sans-serif;
+  color: rgb(140, 3, 3);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+main div article a:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+  opacity: 0.9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.margin-imgs {
+  margin: 10px 10px;
+}
+
+[src$=".webp"] {
+  border-radius: 10px;
+}
+
+.bg-green2 {
+  background-color: rgba(119, 166, 18, 0.3);
+  border-color: rgb(40, 64, 3);
+}
+
+.border-contacto {
+  border-color: rgb(40, 64, 3);
+}
+
+figure figcaption {
+  color: rgb(13, 13, 13);
+  font-size: 1.7rem;
+  margin: 8px;
+}
+
+.imagenes-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-contenedor {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.modal-active .modal-carrito, .modal-carrito .modal-carrito {
+  margin: 150px;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  width: 75%;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.modal-carrito h2 {
+  color: rgb(225, 76, 65);
+  padding-bottom: 5px;
+}
+.modal-carrito #btn-cerrar-carrito {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(40, 64, 3) !important;
+  border: none;
+  background-color: white;
+}
+.modal-carrito #btn-cerrar-carrito:hover {
+  cursor: pointer;
+}
+.modal-carrito #btn-cerrar-carrito:focus {
+  outline: none;
+}
+.modal-carrito #btn-cerrar-carrito:hover {
+  cursor: pointer;
+}
+.modal-carrito #btn-cerrar-carrito:focus {
+  outline: none;
+}
+.modal-carrito .producto-precio {
+  padding-top: 10px;
+}
+
+.productoEnCarrito {
+  border-left: 3px solid rgb(119, 166, 18);
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  margin: 2px 0;
+  padding: 2px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.productoEnCarrito:hover {
+  border-left: 5px solid rgb(40, 64, 3);
+}
+.productoEnCarrito .boton-eliminar {
+  background-color: rgb(119, 166, 18);
+  color: rgb(40, 64, 3);
+  border: none;
+  font-size: 20px;
+}
+.productoEnCarrito .boton-eliminar:hover {
+  cursor: pointer;
+}
+.productoEnCarrito .boton-eliminar:focus {
+  outline: none;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+.boton-eliminar:focus {
+  outline: none;
+}
+
+.modal-sweet {
+  font-size: 1.3rem;
+  color: rgb(140, 3, 3);
+}
+
+.swal2-title {
+  font-size: 2.2rem;
+  color: rgb(140, 3, 3);
+  /* Otros estilos si los necesitas */
+}
+
+footer {
+  background-color: rgb(13, 13, 13);
+  padding: 10px 20px;
+  width: auto;
+  position: sticky;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer svg {
+  width: 30px;
+  fill: rgb(119, 166, 18);
+  margin: 5px 5px;
+}
+footer a {
+  text-decoration: none;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  color: rgb(119, 166, 18);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: right;
+  margin-left: 10px;
+}
+
+@media (width < 768px) {
+  .clases-an {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(5, auto);
+    gap: 5px;
+    grid-template-areas: "clat clat" "cl1 cl2" "cl3 cl4" "cl5 cl6" "cl7 cl8";
+    justify-items: center;
+  }
+  .alquiler-sala {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(2, auto);
+    gap: 10px;
+    grid-template-areas: "s1 s2" "s3 s4";
+    justify-items: center;
+  }
+  .galeria-an {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    grid-row: repeat(5, 300px);
+    gap: 10px;
+    grid-template-areas: "fot1 fot2" "fot3 fot4" "fot5 fot6" "fot7 fot8" "fot9 fot10";
+    justify-items: center;
+  }
+  footer {
+    flex-direction: column;
+    width: auto;
+  }
+  footer div:nth-child(2) {
+    margin: 15px 0;
+  }
+  footer ul li {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  footer svg {
+    width: 40px;
+  }
+  .imagenes-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (width < 576px) {
+  .clases-an {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(9, auto);
+    gap: 5px;
+    grid-template-areas: "clat" "cl1" "cl2" "cl3" "cl4" "cl5" "cl6" "cl7" "cl8";
+    justify-items: center;
+  }
+  .alquiler-sala {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(4, auto);
+    gap: 10px;
+    grid-template-areas: "s1" "s2" "s3" "s4";
+    justify-items: center;
+  }
+  .galeria-an {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(10, 300px);
+    gap: 10px;
+    grid-template-areas: "fot1" "fot2" "fot3" "fot4" "fot5" "fot6" "fot7" "fot8" "fot9" "fot10";
+    justify-items: center;
+  }
+  footer {
+    flex-direction: column;
+    width: auto;
+  }
+  footer div:nth-child(2) {
+    margin: 15px 0;
+  }
+  footer ul li {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  footer svg {
+    width: 40px;
+  }
+  .imagenes-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .margin-imgs {
+    margin: 10px 10px;
+    width: 70%;
+  }
+  iframe {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
