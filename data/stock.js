@@ -108,11 +108,12 @@ const obras = [
 const obrasPpales = [
     
     {
-        id: 2,
-        titulo: "EL MANCHADO", 
-        img: "./images/programacion/el-manchado-obra.webp", 
-        alt: "flyer obra El Manchado",
-        link: "https://alternativateatral.com/obra83803-el-manchado"
+        id: 4,
+        titulo: "HOMENAJE A CONNIE PARKER", 
+        img: "./images/programacion/homenaje-a-connie-parker.webp", 
+        alt: "flyer obra Homenaje a Connie Parker",
+        link: "https://alternativateatral.com/obra84484-homenaje-a-connie-parker"
+
     },
 
     {
