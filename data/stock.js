@@ -110,7 +110,7 @@ const obrasPpales = [
     {
         id: 4,
         titulo: "HOMENAJE A CONNIE PARKER", 
-        img: "../images/programacion/homenaje-a-connie-parker.webp", 
+        img: "./images/programacion/homenaje-a-connie-parker.webp", 
         alt: "flyer obra Homenaje a Connie Parker",
         link: "https://alternativateatral.com/obra84484-homenaje-a-connie-parker"
 
