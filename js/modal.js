@@ -162,4 +162,6 @@ fetch("../data/stock.json")
 	  });
 
 })
-};
+
+	
+  };
