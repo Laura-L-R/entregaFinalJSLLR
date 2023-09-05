@@ -4,8 +4,8 @@ const pintarObrasIndex = async () => {
   const divIndex = document.createElement('div'); // Se crea dentro de ese contenedor, una etiqueta div que estará por fuera y englobará las 4 iteraciones del array (por el forEach ())
   divIndex.classList.add('container-fluid', 'my-4', 'row'); // se le agregan clases. Todas las iteraciones (4 imágenes) serán row
 
-  const response = await fetch("../data/obrasPpales.json")
-    const stock = await response.json()
+  const response = await fetch("./data/obrasPpales.json")
+  const stock = await response.json()
 
     stock.forEach(obraPpal => { 
 
