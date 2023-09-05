@@ -31,11 +31,12 @@ modalCarrito.addEventListener("click", (e) => {
 // Dado que estas funciones son específicas para la creación y manejo de este formulario en particular, la complejidad no es tan grave vs la falta de claridad que puede ocasionar dividirlo.
 
 
-const modalBtnEntradas = (obras) => {
-fetch("../data/stock.json")
-.then(response => response.json())
-.then(obras =>{ 
-	obras.forEach(obra => {
+const modalBtnEntradas = async () => {
+
+	const response = await fetch("../data/stock.json")
+    const stock = await response.json()
+
+    stock.forEach(obra => {
 		const btnObra = document.getElementById(obra.id.toString());
 		btnObra.addEventListener("click", () => {
 		  const opcionesFechasHorarios = obra.funciones.map(funcion => {
@@ -161,7 +162,4 @@ fetch("../data/stock.json")
 		});
 	  });
 
-})
-
-	
-  };
+}
