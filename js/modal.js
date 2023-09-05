@@ -32,8 +32,8 @@ modalCarrito.addEventListener("click", (e) => {
 
 
 const modalBtnEntradas = async () => {
-
-	const response = await fetch("../data/stock.json")
+	try {
+		const response = await fetch("../data/stock.json")
     const stock = await response.json()
 
     stock.forEach(obra => {
@@ -161,5 +161,8 @@ const modalBtnEntradas = async () => {
 		  });
 		});
 	  });
-
+		
+	} catch (error) {
+	console.log(error)
+	}	
 }
